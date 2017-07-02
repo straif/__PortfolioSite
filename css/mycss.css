@@ -1,0 +1,46 @@
+html, body {
+    height: 100%;
+    background: #586970;
+    font-family: 'Oswald', sans-serif;
+}
+
+a:hover {
+    color: gray;
+}
+
+.headr {
+    display: flex;
+    background: #95a09f;
+    justify-content:space-around;
+    flex-flow: row wrap;
+}
+
+.logo {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.logo #slogan {
+    margin-left: 40px;
+    padding-top: 10px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    width: 400px;
+    margin: 40px;
+}
+
+ul li {
+    flex-grow: 1;
+    text-align: center;
+    width: 100px;
+}
+
+ul li a {
+    color: #fbfce7;
+    font-size: 1.2em;
+    text-decoration: none;
+}
