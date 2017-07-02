@@ -5,7 +5,8 @@ html, body {
 }
 
 a:hover {
-    color: gray;
+    color: #fff;
+    text-decoration: none;
 }
 
 .headr {
@@ -40,7 +41,37 @@ ul li {
 }
 
 ul li a {
-    color: #fbfce7;
+    color: #586970;
     font-size: 1.2em;
     text-decoration: none;
+}
+
+h2 {
+    color: #95a09f;
+    text-align: center;
+}
+
+.container {
+    padding: 25px;
+}
+
+.glyphicon-arrow-down {
+    font-size: 4.7em;
+    color: #95a09f; 
+    transform: translateX(-.5em);
+}
+
+#downArrow {
+    margin-left: 50%;
+    
+}
+
+@media all and (max-width: 800px) {
+    .container {
+        padding: 6px;
+    }
+    
+    .logo {
+        flex-grow: 0;
+    }
 }
