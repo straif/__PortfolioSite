@@ -74,4 +74,20 @@ h2 {
     .logo {
         flex-grow: 0;
     }
+    
+    .headr {
+        justify-content: space-around;
+        height: auto;
+    }
+    
+    #navlnx {
+        margin: 30px;
+        padding-right: 0px;
+    }
+}
+
+@media all and (max-width: 700px) {
+    #navlnx {
+       padding-right: 30px;
+    }
 }
