@@ -51,10 +51,6 @@ h2 {
     text-align: center;
 }
 
-.container {
-    padding: 25px;
-}
-
 .glyphicon-arrow-down {
     font-size: 4.7em;
     color: #95a09f; 
@@ -63,8 +59,41 @@ h2 {
 
 #downArrow {
     margin-left: 50%;
+    margin-top: -5px;
     
 }
+
+ul.flex-container {
+    padding-left: 0;
+    display: flex;
+    flex-flow: wrap;
+    width: 90%;
+}
+
+ul.flex-container:first-child {
+    margin-top: -20px;
+}
+
+ul.flex-container li {
+    flex-grow: 1;
+    width: 300px;
+    padding-top: 30px;
+    padding-right: 10px;
+    position: relative;
+}
+
+ul.flex-container li img {
+    width: 100%;
+}
+
+ul.flex-container li a div {
+    position: absolute;
+    bottom: 7px;
+    left: 15px;
+    z-index: 3;
+}
+
+
 
 @media all and (max-width: 800px) {
     .container {
@@ -74,7 +103,7 @@ h2 {
     .logo {
         flex-grow: 0;
     }
-    
+       
     .headr {
         justify-content: space-around;
         height: auto;
@@ -89,5 +118,11 @@ h2 {
 @media all and (max-width: 700px) {
     #navlnx {
        padding-right: 30px;
+    }
+}
+
+@media all and (max-width: 490px) {
+   ul.flex-container li{
+       margin-right: 50px;
     }
 }
