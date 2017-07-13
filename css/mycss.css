@@ -109,7 +109,24 @@ ul.flex-container li:after {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00588888', endColorstr='#a6588888',GradientType=0 ); /* IE6-9 */
 }
 
+.magnPS {
+    background: url(../images/mainlogos/photoshop.png) no-repeat;
+    position: absolute;
+    z-index: 5;
+    width: 50px;
+    height: 49px;
+    opacity: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+ul.flex-container li:hover .magnPS {
+    opacity: 100 !important;
+}
+
+ul.flex-container li:hover {
+    opacity: .8;
+}
 
 @media all and (max-width: 800px) {
     .container {
