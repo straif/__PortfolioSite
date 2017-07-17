@@ -93,22 +93,22 @@ ul.flex-container li a div {
     left: 15px;
     z-index: 3;
 }
-
+/*
 ul.flex-container li:after {
     content: '';
-    position: absolute;
+    position: relative; // aici era 'absolute', dar oricum se comporta ciudat la marginea dr. a pozelor ... !!!
     top: 0;
     left: 0;
-    width: 100%;
+    width: 97.3%;
     height: 100%;
     display: inline-block;
     cursor: pointer;
-    background: -moz-linear-gradient(top, rgba(88,136,136,0) 0%, rgba(88,136,136,0.65) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(88,136,136,0) 0%,rgba(88,136,136,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(88,136,136,0) 0%,rgba(88,136,136,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00588888', endColorstr='#a6588888',GradientType=0 ); /* IE6-9 */
+    background: -moz-linear-gradient(top, rgba(88,136,136,0) 0%, rgba(88,136,136,0.65) 100%);
+    background: -webkit-linear-gradient(top, rgba(88,136,136,0) 0%,rgba(88,136,136,0.65) 100%);
+    background: linear-gradient(to bottom, rgba(88,136,136,0) 0%,rgba(88,136,136,0.65) 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00588888', endColorstr='#a6588888',GradientType=0 );
 }
-
+*/
 .magnPS {
     background: url(../images/mainlogos/photoshop.png) no-repeat;
     position: absolute;
@@ -124,8 +124,8 @@ ul.flex-container li:hover .magnPS {
     opacity: 100 !important;
 }
 
-ul.flex-container li:hover {
-    opacity: .8;
+ul.flex-container li a img:hover {
+    opacity: .5;
 }
 
 @media all and (max-width: 800px) {
