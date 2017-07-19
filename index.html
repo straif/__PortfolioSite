@@ -27,7 +27,7 @@
         </div>
     </header>
     <div id="downArrow"><span class="glyphicon glyphicon-arrow-down"></span></div>
-    
+
     <h2>front-end</h2>
     <div class="container">
         <!-- ... -->
@@ -38,7 +38,17 @@
         <ul class="flex-container">
             <li>
                 <a href="#">
-                    <div class="magnPS"></div><img src="images/portof/small/VitaDansanta_mic.jpg"></a>
+                    <div class="magnPS"></div><img id="VitaDansanta_mic" src="images/portof/small/VitaDansanta_mic.jpg">
+                </a>
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                    <!-- The Close Button -->
+                    <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+                    <!-- Modal Content (The Image) -->
+                    <img class="modal-content" id="VitaDansanta_mare" alt="Big Feast" src="images/portof/big/VitaDansanta_mare.jpg">
+                    <!-- Modal Caption (Image Text) -->
+                    <div id="caption"></div>
+                </div>
             </li>
             <li>
                 <a href="#">

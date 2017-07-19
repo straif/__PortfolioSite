@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     height: 100%;
     background: #586970;
     font-family: 'Oswald', sans-serif;
@@ -13,7 +14,7 @@ a:hover {
 .headr {
     display: flex;
     background: #95a09f;
-    justify-content:space-around;
+    justify-content: space-around;
     flex-flow: row wrap;
 }
 
@@ -54,14 +55,13 @@ h2 {
 
 .glyphicon-arrow-down {
     font-size: 4.7em;
-    color: #95a09f; 
+    color: #95a09f;
     transform: translateX(-.5em);
 }
 
 #downArrow {
     margin-left: 50%;
     margin-top: -5px;
-    
 }
 
 ul.flex-container {
@@ -85,6 +85,8 @@ ul.flex-container li {
 
 ul.flex-container li img {
     width: 100%;
+    border-radius: 15px;
+    transition: 0.4s;
 }
 
 ul.flex-container li a div {
@@ -93,6 +95,8 @@ ul.flex-container li a div {
     left: 15px;
     z-index: 3;
 }
+
+
 /*
 ul.flex-container li:after {
     content: '';
@@ -109,6 +113,7 @@ ul.flex-container li:after {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00588888', endColorstr='#a6588888',GradientType=0 );
 }
 */
+
 .magnPS {
     background: url(../images/mainlogos/photoshop.png) no-repeat;
     position: absolute;
@@ -128,20 +133,94 @@ ul.flex-container li a img:hover {
     opacity: .5;
 }
 
+
+/* ------------------------------------- modal image ----------------------------------- */
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 6; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(88,105,112,0.9); 
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+#caption01 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+.modal-content, #caption { 
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+/* ------------------------------------- END modal image ----------------------------------- */
+
 @media all and (max-width: 800px) {
     .container {
         padding: 6px;
     }
-    
     .logo {
         flex-grow: 0;
     }
-       
     .headr {
         justify-content: space-around;
         height: auto;
     }
-    
     #navlnx {
         margin: 30px;
         padding-right: 0px;
@@ -150,12 +229,12 @@ ul.flex-container li a img:hover {
 
 @media all and (max-width: 700px) {
     #navlnx {
-       padding-right: 30px;
+        padding-right: 30px;
     }
 }
 
 @media all and (max-width: 490px) {
-   ul.flex-container li{
-       margin-right: 50px;
+    ul.flex-container li {
+        margin-right: 50px;
     }
 }
