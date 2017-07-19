@@ -125,7 +125,40 @@ ul.flex-container li:after {
     margin-right: auto;
 }
 
-ul.flex-container li:hover .magnPS {
+.magnIll {
+    background: url(../images/mainlogos/illustrator.png) no-repeat;
+    position: absolute;
+    z-index: 5;
+    width: 50px;
+    height: 49px;
+    opacity: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.magnMax {
+    background: url(../images/mainlogos/3dsmax.png) no-repeat;
+    position: absolute;
+    z-index: 5;
+    width: 50px;
+    height: 49px;
+    opacity: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.magnZB {
+    background: url(../images/mainlogos/zbrush.jpg) no-repeat;
+    position: absolute;
+    z-index: 5;
+    width: 50px;
+    height: 49px;
+    opacity: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul.flex-container li:hover .magnPS, ul.flex-container li:hover .magnIll, ul.flex-container li:hover .magnMax, ul.flex-container li:hover .magnZB {
     opacity: 100 !important;
 }
 
