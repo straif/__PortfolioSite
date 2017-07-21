@@ -84,7 +84,7 @@ ul.flex-container li {
 }
 
 ul.flex-container li img {
-    width: 100%;
+    max-width: 100%;
     border-radius: 15px;
     transition: 0.4s;
 }
