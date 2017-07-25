@@ -1,0 +1,21 @@
+html,
+body {
+    height: 100%;
+    background: #586970;
+    font-family: 'Oswald', sans-serif;
+    color: #95a09f;
+    font-size: 20px;
+}
+
+.about {
+    margin: 10%;
+    width: auto;
+}
+
+@media all and (max-width: 800px) {
+   
+}
+
+@media all and (min-width: 799px) {
+    
+}
